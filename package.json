@@ -1,0 +1,17 @@
+{
+  "name": "aos-brightness",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "aos-brightness",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}

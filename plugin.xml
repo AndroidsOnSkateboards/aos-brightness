@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="aos-brightness" version="1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>aos-brightness</name>
+	<js-module name="aos-brightness" src="www/aos-brightness.js">
+		<clobbers target="cordova.plugins.aos-brightness" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="aos-brightness">
+				<param name="android-package" value="com.androidsonskateboards.brightness.AOSBrightness" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"/>
+		<source-file src="src/android/AOSBrightness.java" target-dir="src/com/androidsonskateboards/brightness" />
+	</platform>
+</plugin>
