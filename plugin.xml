@@ -10,6 +10,9 @@
 				<param name="android-package" value="com.androidsonskateboards.brightness.AOSBrightness" />
 			</feature>
 		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+		</config-file>
 		<config-file parent="/*" target="AndroidManifest.xml"/>
 		<source-file src="src/android/AOSBrightness.java" target-dir="src/com/androidsonskateboards/brightness" />
 	</platform>
